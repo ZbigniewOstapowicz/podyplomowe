@@ -16,8 +16,8 @@ and open the template in the editor.
     <div>TODO write content</div>
     <div>zbigniew ostapowicz</div>
     <span>jakis tekst</span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet ducimus cupiditate iusto doloremque harum cumque omnis repellendus, reiciendis eaque.
-        <img src="image/img.jpg" alt="obraz" width="200" height="400" aligin="left" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet ducimus cupiditate iusto doloremque harum cumque omnis repellendus, reiciendis eaque
+        
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, modi, consectetur. Eveniet magnam labore, eius saepe reiciendis soluta similique laudantium est obcaecati qui voluptatem illo natus pariatur ipsum hic, corporis totam cumque dolorem iste, sint accusamus. Id quia labore quod, commodi excepturi perspiciatis quaerat iste non eos, qui consequuntur laudantium?</p>
     <table width="800px" height="500px" border="2" cellpadding="5" cellspacing="10">
         <!--
@@ -58,6 +58,50 @@ and open the template in the editor.
 
         </tr>
     </table>
+        <img src="image/img.jpg" alt="obraz" align="left" usemap="#mapa"/>
+        <map name="mapa">
+            <area shape="rect" coords="12,23,40,30" href="https://www.wp.pl/" alt="wendkarz"/>
+            <p>&COPY;Zbigniew ostpowicz</p>
+        </map>
+        <br>
+        <form>
+            <input value="zbigniew" type="text" maxlength="3" disabled="disabled" name="imie" id="imie"/><br>
+            <input type="password" name="pass" id="pass"/><br>
+            <label for="imie">imie</label>
+
+            <input type="checkbox" name="chec" id="check"/><br>
+            <label for="check">checkbox</label>
+            <input type="radio" name="rad" id="rad"/><br>
+            <label for="rad">radioa</label>
+            <input type="radio" name="rad"/><br>
+            <label for="rad">radio</label>
+            <input type="reset" name="rese" id="res"/><br>
+            <label for="res">reset</label>
+            <input type="file" name="fil" id="fil"/><br>
+            <label for="fil">file</label>
+            <input type="hidden" name="hid" id="hid"/><br>
+            <label for="hid">hidden</label>
+            <input type="image" name="imag" id="im"/><br>
+            <label for="im">image</label>
+            <input type="button" name="butt" id="buttt"/><br>
+            <label for="buttt">button</label>
+            <input type="submit" value="wyslij" id="sub"/><br>
+            <label for="sub">wyslij</label>
+            <select id="selet">
+                <option value="00-000">warszawa</option>
+                <option value="15-000">biaystok</option>
+                <option value="16-000">zambrów</option>
+                <optgroup label="skandynawia">
+                <option value="00-000">warszawa</option>
+                <option value="15-000">biaystok</option>
+                <option value="16-000">zambrów</option>
+                </optgroup>
+                
+            </select>
+            <input type="email" required=""/>
+            <input type="number" required=""/>
+        </form>
+        
 </body>
 
 </html>
