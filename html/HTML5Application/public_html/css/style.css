@@ -47,3 +47,15 @@ a:hover{
 li:nth-child(3){
     color: bisque;
 }
+p::first-letter{
+    font-size: 20px;
+}
+p::first-line{
+    text-decoration: underline;
+}
+p .test:before{
+    content: "przed";
+}
+p .test:after{
+    content: "po";
+}
