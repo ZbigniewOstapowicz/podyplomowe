@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-11-18, 17:06:44
+    Author     : student
+*/
+
+.boks{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 40px;
+    color: wheat;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    /*    background-image: url("../image/50.png");
+        background-color: blue;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 50% 50%;*/
+    background: black url("../image/50.png") no-repeat scroll 50% 50%;
+    border:2px dashed red;
+}
+p{
+    letter-spacing: -2px;
+    line-height: 20px;
+    text-indent: 60px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    word-spacing: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+p > span{
+    vertical-align: sub;
+    text-decoration: line-through;
+
+}
