@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: oswald;
+    font-size: 10px;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    transition: .3s linear;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ccc;
+    position: relative;
+}
+
+img.color {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    height: 36%;
+    z-index: 1;
+    animation: color 4s linear infinite;
+}
+
+img.gray {
+    position: absolute;
+    bottom: -11%;
+    left: -90%;
+    height: 110%;
+    opacity: 0.2;
+    animation: gray 4s linear infinite;
+
+}
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: text 4s linear infinite;
+}
+
+.text h1 {
+    font-size: 4rem;
+}
+
+.text h2 {
+    font-size: 2.2rem;
+}
+
+@media (orientation: landscape) {
+    img.color {
+        right: 3%;
+        height: 56%;
+    }
+
+    img.gray {
+        bottom: -15%;
+        left: -30%;
+        height: 130%;
+    }
+
+    .text {
+        top: 5%;
+        width: 60%;
+        right: 0;
+        left: auto;
+    }
+
+    .text h1 {
+        font-size: 2.8rem;
+    }
+
+    .text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 360px) and (min-height:740px) {
+    img.gray {
+        bottom: -10%;
+        left: -120%;
+        height: 115%;
+    }
+}
+
+@media (min-width: 375px) and (orientation: portrait) {
+    img.gray {
+        bottom: -11%;
+        left: -110%;
+        height: 110%;
+    }
+}
+
+@media (min-width: 390px) {
+    .text h1 {
+        font-size: 5rem;
+    }
+
+    .text h2 {
+        font-size: 3rem;
+    }
+}
+
+img.gray {
+    left: -90%;
+}
+
+/* @media(min-width: 550px) {
+    img.gray {
+        left: -90%;
+    }
+} */
+
+@media(min-width: 550px) and (orientation:landscape) {
+    img.gray {
+        left: -10%;
+    }
+}
+
+@media (min-width: 768px) and (orientation:portrait) {
+    img.gray {
+        bottom: -10%;
+        left: -70%;
+        height: 110%;
+    }
+
+    .text h1 {
+        font-size: 6rem;
+    }
+
+    .text h2 {
+        font-size: 4rem;
+    }
+}
+
+
+@media (min-width: 812px) and (orientation:landscape) {
+    img.gray {
+        bottom: -12%;
+        left: 5%;
+        height: 125%;
+    }
+
+    img.color {
+        right: 10%;
+    }
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .text h1 {
+        font-size: 7rem;
+    }
+
+    .text h2 {
+        font-size: 4rem;
+    }
+
+    img.gray {
+        left: -30%;
+    }
+
+    img.color {
+        right: 3%;
+    }
+
+}
+
+@media(min-width: 1024px) and (orientation: landscape) {
+    img.gray {
+        left: -40%;
+    }
+
+    .text h1 {
+        font-size: 4rem;
+    }
+
+    .text h2 {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    img.gray {
+        left: -70%;
+    }
+
+    .text h1 {
+        font-size: 7rem;
+    }
+
+    .text h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .text h1 {
+        font-size: 8rem;
+    }
+
+    .text h2 {
+        font-size: 5rem;
+    }
+
+    img.gray {
+        left: -1%;
+        height: 130%;
+    }
+
+    img.color {
+        right: 2%;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .text h1 {
+        font-size: 9rem;
+    }
+
+    .text h2 {
+        font-size: 6rem;
+    }
+
+    img.gray {
+        left: -5%;
+        height: 130%;
+    }
+
+    img.color {
+        right: 7%;
+    }
+
+}
+
+@keyframes color {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+}
+
+@keyframes gray {
+    0% {
+        transform: translateX(0) scale(.8);
+        opacity: .5;
+    }
+
+    87% {
+        opacity: .5;
+    }
+
+
+    100% {
+        transform: translateX(5%) scale(.9);
+        opacity: 0;
+    }
+}
+
+@keyframes text {
+    0% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+
+
+    87% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+/* menu burger */
+.burger {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    line-height: 50px;
+    z-index: 4;
+    transition: .3s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: fixed;
+    top: -550px;
+    right: -550px;
+    width: 550px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #ddd;
+    z-index: 2;
+    opacity: .9;
+    text-transform: uppercase;
+    transition: .3s linear;
+}
+
+.fas {
+    display: none;
+    color: black;
+}
+
+i.show {
+    display: block;
+}
+
+.fa-times {
+    color: red;
+}
+
+aside.show {
+    top: -250px;
+    right: -250px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 55% 20%;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+aside li {
+    padding: 4px;
+}
+
+aside li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* sekcja omnie */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 15px;
+    text-align: justify;
+    text-transform: uppercase;
+    background-color: #eee;
+    color: black;
+}
+
+section h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+section h2 {
+    padding: 7px;
+}
+
+section .fas {
+    display: inline-block;
+    margin: 10px;
+}
+
+.aboutMe {
+    box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+.education {
+    box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+}
+
+.education ul {
+    list-style: none;
+}
+
+.skills {
+    box-shadow: 2px 2px 9px 5px rgba(0, 0, 0, 0.75);
+}
+
+.skills h2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.htmlBar {
+    width: 90vw;
+    margin: 0 auto;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 8%;
+}
+
+.htmlBarColor {
+    width: 80%;
+    height: 100%;
+    background-color: green;
+}
+
+.section p {
+    width: 100%;
+    text-align: center;
+}
