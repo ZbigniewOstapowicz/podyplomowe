@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zbigniew Ostapowicz</title>
+    <title>Zbigniew Ostapowicz-CV</title>
+    <meta name="description" content="Curriculum vitae">
+    <meta name="keywords" content="HTML,CSS,CV,JavaScrip,Zbigniew Ostapowicz,Front-end developer,Curriculum vitae">
+    <meta name="author" content="Zbigniew Ostapowicz">
+    <meta name="robots" content="index, follow, all">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Condensed&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -19,7 +30,7 @@
             <img src="img/photo-gray.png" alt="Zbigniew.gray" class="gray">
             <div class="text">
                 <h1>Zbigniew Ostapowicz </h1>
-                <h2>Front-end Developer</h2>
+                <h2>Curriculum vitae</h2>
             </div>
 
         </header>
@@ -30,15 +41,15 @@
         <aside class="active">
             <nav>
                 <ul>
-                    <li>o mnie</li>
-                    <li>wykształcenie</li>
-                    <li>umiejętności</li>
-                    <li>kontakt</li>
+                    <li><a href="#section1">o mnie</a></li>
+                    <li><a href="#section2">wykształcenie</a></li>
+                    <li><a href="#section3">umiejętności</a></li>
+                    <li><a href="#section4">kontakt</a></li>
                 </ul>
             </nav>
         </aside>
         <main>
-            <section class="aboutMe">
+            <section class="aboutMe" id="section1">
                 <div class="web">
                     <img src="img/aboutMe.jpg" alt="cv">
                 </div>
@@ -46,59 +57,58 @@
                     <h1>Dane osobowe</h1>
                     <table>
                         <tr>
-                            <td>
-                                <h2>Imię: Zbigniew</h2>
-                            </td>
+                            <th>Imię:</th>
+                            <td>Zbigniew</td>
                         </tr>
                         <tr>
-                            <td>
-                                <h2>Nazwisko: Ostapowicz</h2>
-                            </td>
+                            <th>Nazwisko:</th>
+                            <td>Ostapowicz</td>
                         </tr>
                         <tr>
-                            <td>
-                                <h2>Data urodzenia: 17.03.1985</h2>
-                            </td>
+                            <th>Data urodzenia:</th>
+                            <td>17.03.1985</td>
                         </tr>
                         <tr>
-                            <td>
-                                <h2>Adres: Białystok</h2>
-                            </td>
+                            <th>Adres:</th>
+                            <td>Białystok</td>
                         </tr>
                         <tr>
-                            <td>
-                                <h2>Doświadczenie: 2007->obecnie-pracownik obługi klienta, świadczący usługi dla
-                                    potentata paliwowego. Kierownik zmiany oraz Były trener </h2>
+                            <th>Doświadczenie:</th>
+                            <td>2007->obecnie-pracownik obługi klienta, świadczący usługi dla potentata paliwowego.
+                                Kierownik zmiany oraz Były trener
                             </td>
                         </tr>
                     </table>
                 </div>
 
             </section>
-            <section class="education">
+            <section class="education" id="section2">
                 <div class="web">
                     <img src="img/education.jpg" alt="students">
                 </div>
                 <div class="about">
-                    <h1>wykształcenie</h1>
+                    <h1>Wykształcenie</h1>
 
                     <ul>
-                        <li>
-                            <h2>2000->2005: technikum agrobiznesu-ukonczone z wyróżnieniem</h2>
+                        <li>2000</li>
+                        <li class="school">Technikum Agrobiznesu-ukonczone z wyróżnieniem
                         </li>
-                        <li>
-                            <h2>2005->2008: wyższa szkoła zarządzania nieruchomosciami, kierunek ekonimia</h2>
+                        <li>2005</li>
+                        <li class="school">Wyższa Szkoła Gospodarowania Nieruchomosciami w Białymstoku, kierunek
+                            ekonimia, specjalność: zarządzanie nieruchomościami. Licencjat z Ekonomii
                         </li>
-                        <li>
-                            <h2>2008->2011: wyższa szkoła finansów i zarzadzania, kierunek finanse i rachunkowość</h2>
-                        </li>
-                        <li>
-                            <h2>2018->obecnie: politechnika białostocka, kierunek front-end developer</h2>
-                        </li>
+                        <li>2008</li>
+                        <li class="school">Wyższa Szkoła Finansów i Zarzadzania, kierunek finanse i rachunkowość,
+                            specjalność: analityka finansowa</li>
+                        <li>2011</li>
+
+                        <li>2018</li>
+                        <li class="school">Politechnika Białystok, studia podyplomowe, kierunek front-end developer</li>
+                        <li>obecnie</li>
                     </ul>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills clearfix" id="section3">
                 <div class="web">
                     <img src="img/skills.jpg" alt="skills">
                 </div>
@@ -106,14 +116,13 @@
                     <h1>Umiejetnosci</h1>
                     <h2>HTML</h2>
                     <div class="container">
-                        <div class="skill html">90%</div>
+                        <div class="skill html">80%</div>
                     </div>
 
                     <h2>CSS</h2>
                     <div class="container">
                         <div class="skill css">80%</div>
                     </div>
-
                     <h2>JavaScript</h2>
                     <div class="container">
                         <div class="skill js">65%</div>
@@ -137,22 +146,30 @@
                 </div>
             </section>
         </main>
-        <section class="contact">
+        <section class="contact" id="section4">
             <h1>Skontaktuj się ze mną</h1>
             <div class="wrap clearfix">
 
                 <form>
-                    <input type="text" placeholder="Twoje imię">
-                    <input type="text" placeholder="Email">
-                    <textarea placeholder="Twoja wiadomość"></textarea>
+                    <label for="name">imię</label>
+                    <input id="name" type="text" placeholder="Twoje imię">
+                    <label for="email">email</label>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <label for="tele">telefon</label>
+                    <input id="tele" type="tel" placeholder="Numer kontaktowy">
+                    <label for="textare">wiadomość</label>
+                    <textarea id="textare" placeholder="Twoja wiadomość" required></textarea>
+                    <input id="checkbox" type="checkbox" required>
+                    <label for="checbox">Zgoda na przetwarzanie danych osobowych</label>
                     <button>Wyślij wiadomość</button>
+
                 </form>
                 <div class="socials">
                     <div class="social clearfix"><img src="img/contact1.png" alt="kontakt"><span>mail@domena.pl</span></div>
                     <div class="social clearfix"><img src="img/contact2.png" alt="kontakt"><span>654654654</span></div>
-                    <div class="social clearfix"><img src="img/contact3.png" alt="kontakt"><span>adamnowak</span></div>
-                    <div class="social clearfix"><img src="img/contact4.png" alt="kontakt"><span>@adamnowak</span></div>
-                    <div class="social clearfix"><img src="img/contact5.png" alt="kontakt"><span>adamnowak</span></div>
+                    <div class="social clearfix"><a href="https://web.facebook.com" target="_blank"><img src="img/contact3.png" alt="kontakt"><span>zbigniewOstapowicz</span></a></div>
+                    <div class="social clearfix"><a href="https://twitter.com" target="_blank"><img src="img/contact4.png" alt="kontakt"><span>@zbigniewO</span></a></div>
+                    <div class="social clearfix"><a href="https://pl.linkedin.com/" target="_blank"><img src="img/contact5.png" alt="kontakt"><span>OstapowiczZ</span></a></div>
 
                 </div>
 
@@ -161,7 +178,9 @@
 
         </section>
         <footer>
-            &copy2019 Zbigniew Ostapowicz
+            &copy;2019 Zbigniew Ostapowicz
+            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze
+                mnie stanowisko.</p>
         </footer>
     </div>
     <script src="main.js"></script>

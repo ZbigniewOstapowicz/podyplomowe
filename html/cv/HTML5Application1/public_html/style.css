@@ -7,6 +7,7 @@ html {
     font-family: 'Saira Condensed',
         sans-serif;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 .clearfix::after {
@@ -61,14 +62,14 @@ img.gray {
 }
 
 .text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .text h2 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
 }
 
-@media (orientation: landscape) {
+@media (orientation:landscape) {
     img.color {
         right: 3%;
         height: 56%;
@@ -76,12 +77,12 @@ img.gray {
 
     img.gray {
         bottom: -15%;
-        left: -30%;
+        left: -100%;
         height: 130%;
     }
 
     .text {
-        top: 5%;
+        top: 2%;
         width: 60%;
         right: 0;
         left: auto;
@@ -104,15 +105,15 @@ img.gray {
     }
 }
 
-@media (min-width: 375px) and (min-height:812px) {
+@media (min-width:375px) {
     img.gray {
         bottom: -11%;
-        left: -90%;
+        left: -110%;
         height: 110%;
     }
 
     .text h1 {
-        font-size: 5rem;
+        font-size: 5.8rem;
     }
 
     .text h2 {
@@ -120,7 +121,7 @@ img.gray {
     }
 }
 
-@media (min-width: 390px) {
+@media (min-width:390px) {
     .text h1 {
         font-size: 5rem;
     }
@@ -128,42 +129,77 @@ img.gray {
     .text h2 {
         font-size: 3rem;
     }
-}
 
-img.gray {
-    left: -90%;
-}
-
-/* @media(min-width: 550px) {
     img.gray {
         left: -90%;
     }
-} */
-
-@media(min-width: 550px) and (orientation:landscape) {
-    img.gray {
-        left: -10%;
-    }
 }
 
-@media (min-width: 768px) and (orientation:portrait) {
+@media (min-width:568px) and (orientation:landscape) {
     img.gray {
-        bottom: -10%;
-        left: -70%;
-        height: 110%;
+        left: -5%;
+        height: 125%;
+        bottom: -13%;
+    }
+
+    .text {
+        top: 14%;
     }
 
     .text h1 {
-        font-size: 6rem;
-    }
-
-    .text h2 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 
-@media (min-width: 812px) and (orientation:landscape) {
+@media (min-width:667px) and (orientation:landscape) {
+    .text {
+        top: 11%;
+    }
+
+    .text h1 {
+        font-size: 3rem;
+    }
+
+    .text h2 {
+        font-size: 2.2rem;
+    }
+
+    img.gray {
+        left: -5%;
+        height: 125%;
+        bottom: -13%;
+    }
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    img.gray {
+        bottom: -12%;
+        left: -60%;
+        height: 115%;
+    }
+
+    .text {
+        top: 8%;
+    }
+
+    .text h1 {
+        font-size: 7rem;
+    }
+
+    .text h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width:800px) and (orientation:portrait) {
+    img.gray {
+        left: -80%;
+    }
+}
+
+
+@media (min-width:812px) and (orientation:landscape) {
     img.gray {
         bottom: -12%;
         left: 5%;
@@ -174,9 +210,17 @@ img.gray {
         right: 10%;
     }
 
+    .text {
+        top: 9%;
+    }
+
+    .text h1 {
+        font-size: 4.2rem;
+    }
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
     .text h1 {
         font-size: 7rem;
     }
@@ -195,7 +239,7 @@ img.gray {
 
 }
 
-@media(min-width: 1024px) and (orientation: landscape) {
+@media(min-width:1024px) and (orientation:landscape) {
     img.gray {
         left: -40%;
     }
@@ -209,9 +253,23 @@ img.gray {
     }
 }
 
-@media(min-width: 1024px) and (orientation: portrait) {
+@media(min-width:1024px) and (orientation:portrait) {
     img.gray {
-        left: -70%;
+        left: -65%;
+    }
+
+    .text h1 {
+        font-size: 9rem;
+    }
+
+    .text h2 {
+        font-size: 6rem;
+    }
+}
+
+@media(min-width:1280px) and (orientation:landscape) {
+    img.gray {
+        left: -10%;
     }
 
     .text h1 {
@@ -219,9 +277,11 @@ img.gray {
     }
 
     .text h2 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
+
+
 
 @media (min-width: 1600px) {
     .text h1 {
@@ -243,7 +303,7 @@ img.gray {
 
 }
 
-@media (min-width: 1920px) {
+@media (min-width:1920px) {
     .text h1 {
         font-size: 9rem;
     }
@@ -346,11 +406,15 @@ aside {
 
 .fas {
     display: none;
-    color: black;
+
 }
 
 i.show {
     display: block;
+}
+
+.fa-bars {
+    color: green;
 }
 
 .fa-times {
@@ -364,8 +428,7 @@ aside.show {
 
 aside ul {
     margin: 55% 20%;
-    font-size: 24px;
-    letter-spacing: 3px;
+
 }
 
 aside li {
@@ -373,9 +436,43 @@ aside li {
     padding: 4px;
 }
 
-aside li:hover {
+aside a {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
     color: red;
     cursor: pointer;
+}
+
+@media (min-width:768px) and (orientation:portrait) {
+    .burger {
+        font-size: 50px;
+    }
+
+    aside {
+        top: -700px;
+        right: -700px;
+        width: 700px;
+        height: 700px;
+    }
+
+    aside.show {
+        top: -280px;
+        right: -280px;
+    }
+
+    aside ul {
+        margin: 48% 19%;
+
+    }
+
+    aside a {
+        font-size: 40px;
+    }
 }
 
 /* sekcja omnie */
@@ -386,14 +483,20 @@ main {
 
 section h1 {
     padding: 10px;
-    text-align: left;
-    font-size: 25px;
+    text-align: center;
+    font-size: 2.6rem;
     letter-spacing: 2px;
+    text-transform: uppercase;
     border-bottom: 2px white solid;
 }
 
 section h2 {
-    padding: 7px;
+    padding: 5px;
+    font-size: 2.2rem;
+}
+
+section h3 {
+    font-size: 2rem;
 }
 
 .web img {
@@ -402,17 +505,28 @@ section h2 {
 }
 
 .aboutMe .about {
+    padding: 5px;
     background-color: #ff4f2c;
     color: white;
 }
 
-.about td {
-    border-bottom: 1px white solid;
+.about th {
+    width: 20%;
+    vertical-align: top;
+}
+
+td,
+th {
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 0 5px;
 }
 
 .education,
 .skills,
 .aboutMe {
+    max-width: 1024px;
+    margin: 0 auto;
     padding-top: 20px;
 }
 
@@ -421,20 +535,33 @@ section h2 {
 }
 
 .education .about {
+    padding: 5px;
     background-color: #29a6dc;
     color: white;
 }
 
 .education ul {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .about li {
     list-style: circle;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.about .school {
+    padding-left: 20%;
+    list-style: none;
+    font-weight: normal;
 }
 
 .skills {
     padding-bottom: 20px;
+}
+
+.skills h2 {
+    text-align: center;
 }
 
 .skills img {
@@ -442,57 +569,81 @@ section h2 {
 }
 
 .skills .about {
+    padding: 5px;
     background-color: #ff4f2c;
     color: white;
 }
 
 .container {
-    width: 90%;
-    /* Full width */
+    width: 95%;
+    margin: 0 auto;
     background-color: #ddd;
-    /* Grey background */
     border: 2px solid black;
     border-radius: 20px;
 }
 
 .skill {
     text-align: right;
-    /* Right-align text */
     padding: 5px;
-    /* Add some padding */
     border-radius: 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 
 }
 
 .html {
-    width: 90%;
+    width: 80%;
     background-color: #4CAF50;
 }
 
-/* Green */
 .css {
     width: 80%;
     background-color: #2196F3;
 }
-
-/* Blue */
 .js {
     width: 65%;
     background-color: #f44336;
 }
 
-.skills h3 {
-    font-size: 1.5rem;
+.skills ul {
+    padding-left: 25px;
 }
 
-
-.skills li {
-    font-size: 1.3rem;
+.skills .about li {
+    list-style-type: circle;
+    font-size: 1.6rem;
+    font-weight: normal;
 }
 
-.skills li::before {
-    content: ">";
+@media (min-width: 1024px) {
+
+    section h1 {
+        font-size: 6rem;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    td,
+    th {
+        font-size: 3rem;
+    }
+
+    .education ul {
+        padding: 0 35px;
+    }
+
+    .about li {
+        font-size: 3rem;
+    }
+
+    .skills h3 {
+        font-size: 2.5rem;
+    }
+
+    .skills .about li {
+        font-size: 2rem;
+    }
 }
 
 .slogan {
@@ -628,6 +779,20 @@ section h2 {
     height: 120px
 }
 
+.contact #checkbox {
+    height: 20px;
+    width: 5%;
+}
+
+.contact label {
+    display: none;
+}
+
+.contact label:last-of-type {
+    display: inline-block;
+    font-size: 16px;
+}
+
 .contact button {
     font-size: 14px;
     line-height: 40px;
@@ -653,11 +818,15 @@ section h2 {
 
 }
 
-.contact .social span {
+.contact span {
     line-height: 72px;
     padding-left: 20px;
     float: left;
     font-size: 20px;
+}
+
+.contact .socials a {
+    color: white;
 }
 
 @media (min-width: 533px) {
@@ -678,10 +847,11 @@ section h2 {
     .contact .socials {
         float: left;
         width: 50%;
+        margin: 0 auto;
     }
 
     .contact .socials {
-        padding: 0+;
+        padding: 0;
     }
 
     .contact .social {
@@ -724,10 +894,13 @@ section h2 {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: #ccc;
-    text-align: center;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
+}
+
+footer p {
+    font-size: 13px;
 }
