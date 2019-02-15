@@ -105,7 +105,7 @@ img.gray {
     }
 }
 
-@media (min-width:375px) {
+@media only screen and (min-width:375px) {
     img.gray {
         bottom: -11%;
         left: -110%;
@@ -314,6 +314,7 @@ img.gray {
 
     img.gray {
         left: -5%;
+        bottom: -13%;
         height: 130%;
     }
 
@@ -599,6 +600,7 @@ th {
     width: 80%;
     background-color: #2196F3;
 }
+
 .js {
     width: 65%;
     background-color: #f44336;
