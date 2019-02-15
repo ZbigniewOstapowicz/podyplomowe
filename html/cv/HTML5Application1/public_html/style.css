@@ -782,17 +782,19 @@ th {
 }
 
 .contact #checkbox {
+    float: left;
     height: 20px;
-    width: 5%;
+    width: 20px;
 }
 
 .contact label {
     display: none;
 }
 
-.contact label:last-of-type {
-    display: inline-block;
+.contact .agree {
     font-size: 16px;
+    padding-left: 10px;
+    line-height: 20px;
 }
 
 .contact button {
